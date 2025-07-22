@@ -1,4 +1,8 @@
 
+* {
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 10pt;
+}
 
 @define-color background     #1E1D2FFF; /* Base */
 @define-color background-alt #282839FF; /* Surface0 */
