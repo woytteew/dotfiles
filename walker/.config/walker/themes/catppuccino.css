@@ -4,12 +4,13 @@
     font-size: 10pt;
 }
 
-@define-color background     #1E1D2FFF; /* Base */
+@define-color background     #45475a;
 @define-color background-alt #282839FF; /* Surface0 */
-@define-color foreground     #D9E0EEFF; /* Text */
+@define-color foreground     #D9E0EEFF; 
 @define-color selected       #7AA2F7FF; /* Blue */
 @define-color active         #ABE9B3FF; /* Green */
 @define-color urgent         #F28FADFF; /* Pink */
+@define-color white-text     #cdd6f4;
 
 
 #window,
@@ -24,8 +25,8 @@
 #typeahead,
 #list,
 child,
-scrollbar,
-slider,
+#scrollbar,
+#slider,
 #item,
 #text,
 #label,
@@ -37,7 +38,7 @@ slider,
 
 #cfgerr {
   background: rgba(255, 0, 0, 0.4);
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 8px;
   font-size: 1.2em;
 }
@@ -49,8 +50,8 @@ slider,
 #box {
   border-radius: 12px;
   background: @background;
-  padding: 32px;
-  border: 1px solid lighter(@background);
+  padding: 10px;
+  border: 2px solid lighter(@background);
   box-shadow:
     0 19px 38px rgba(0, 0, 0, 0.3),
     0 15px 12px rgba(0, 0, 0, 0.22);
@@ -58,7 +59,7 @@ slider,
 
 #search {
   padding: 8px;
-  color: white;
+  color: white-text;
 }
 
 #prompt {
@@ -69,7 +70,7 @@ slider,
 }
 
 #clear {
-  color: @foreground;
+  color: lighter(@foreground);
   opacity: 0.8;
 }
 
@@ -96,7 +97,7 @@ slider,
 }
 
 #input placeholder {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 #list {
@@ -128,7 +129,7 @@ child:hover {
 }
 
 #sub {
-  opacity: 0.5;
+  opacity: 0.6;
   font-size: 0.8em;
 }
 
@@ -147,7 +148,7 @@ child:hover {
 .activation #text,
 .activation #icon,
 .activation #search {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .aiItem {
