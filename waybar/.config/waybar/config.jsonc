@@ -1,20 +1,23 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 35,
+  "height": 45,
   "spacing": 0,
-  /*"modules-left": [
-    "hyprland/workspaces",
-    "tray",
-    "custom/lock",
-    "custom/reboot",
-    "custom/power"
-  ],*/
+  "modules-left": [
+    "custom/arch",
+    "hyprland/language"
+  ],
   "modules-center": [
-	"custom/notification",
-	"clock",
-	"custom/reboot",
-	"custom/power"
+	//"custom/notification",
+	"clock"
+	//"custom/reboot",
+	//"custom/power"
+	],
+  "modules-right": [
+		//"hyprland/language",
+		"custom/notification",
+		"custom/reboot",
+		"custom/power"
 	],
   /*"modules-right": [
     "network",
@@ -57,24 +60,35 @@
   "tooltip": false,
   },
   "custom/reboot": {
-    "format": "<span color='#FFD700'>  </span>",
+    "format": "<span color='#f9e2af'>  </span>",
     "on-click": "systemctl reboot",
     "tooltip": false,
   },
   "custom/power": {
-    "format": "<span color='#FF4040'>  </span>",
+    "format": "<span color='#f38ba8'>  </span>",
     "on-click": "systemctl poweroff",
     "tooltip": false,
   },
   "clock": {
     "interval": 1,
     "timezone": "Europe/Prague",
-    "format": "<span color='#BF00FF'>  </span>{:%H:%M} ",
-    "tooltip": true,
+    "format": "<span color='#cba6f7'>  </span>{:%d %b %H:%M } ",
+    "tooltip": false,
     "tooltip-format": "{:%d.%m.%Y, %A}"
   },
+"hyprland/language": {
+
+	"format": " {} ",
+	"format-cs": "cz",
+	"format-en": "us",
+	"on-click": "hyprctl switchxkblayout keychron-keychron-c1-pro next"
+
+},
+"custom/arch":{
+	"format": "<span color='#74c7ec'>  </span>",
+},
   "tray": {
-    "icon-size": 10,
-    "spacing": 2
+    "icon-size": 30,
+    "spacing": 4
   },
 }

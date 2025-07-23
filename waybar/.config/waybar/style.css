@@ -1,8 +1,8 @@
 /* 全局设置 */
 * {
   font-family: "Jetbrains Mono Nerd Font";
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: normal;
+  font-size: 16px;
   color: #dcdfe1;
 }
 
@@ -11,14 +11,14 @@
   background-color: rgba(0, 0, 0, 0);
   border: none;
   box-shadow: none;
+
 }
 
-/* 所有模块统一风格 */
 #workspaces,
 #window,
 #tray{
   /*background-color: rgba(29,31,46, 0.95);*/
-  background-color: rgba(15,27,53,0.9);
+  background-color: rgba(15,27,53,0.8);
   padding: 4px 6px; /* 保持内部间距 */
   margin-top: 6px; /* 外部间距增加 */
   margin-left: 6px; /* 外部间距增加 */
@@ -29,62 +29,74 @@
 }
 
 #custom-reboot{
-  background-color: rgba(15,27,53,0.9);
+  background-color: rgba(15,27,53,0.8);
   margin-top: 6px; /* 与屏幕顶部留出距离 */
 	margin-right: 0px;
 	margin-left: 0px;
+  /*margin-bottom: 4px;*/
+  padding: 4px 2px; /* 保持内部间距 */
+  border-radius: 0px 0px 0px 0px;
+  border-width: 0px;
+}
+
+#custom-arch{
+  background-color: rgba(15,27,53,0.8);
+  margin-top: 6px; /* 与屏幕顶部留出距离 */
+  margin-left: 12px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 0px; /* 保持内部间距 */
+  border-radius: 10px 0px 0px 10px;
+  border-width: 2px;
+	font-size: 28px;
+
+}
+
+#custom-notification{
+  background-color: rgba(15,27,53,0.8);
+  margin-top: 6px; /* 与屏幕顶部留出距离 */
+  margin-right: 0px;
+  margin-left: 0px;
   /*margin-bottom: 4px;*/
   padding: 4px 2px; /* 保持内部间距 */
   border-radius: 10px 0px 0px 10px;
   border-width: 0px;
 }
 
-#custom-notification{
-  background-color: rgba(15,27,53,0.9);
-  margin-top: 6px; /* 与屏幕顶部留出距离 */
-  margin-right: 6px;
-  margin-left: 15px;
-  /*margin-bottom: 4px;*/
-  padding: 4px 2px; /* 保持内部间距 */
-  border-radius: 10px 10px 10px 10px;
-  border-width: 0px;
-}
-
-#custom-notification{
-  background-color: rgba(15,27,53,0.9);
-  margin-top: 6px; /* 与屏幕顶部留出距离 */
-  margin-right: 6px;
-	margin-right: 0px;
-	margin-left: 15px;
-  /*margin-bottom: 4px;*/
-  padding: 4px 2px; /* 保持内部间距 */
-  border-radius: 10px 10px 10px 10px;
-  border-width: 0px;
-}
-
 
 #custom-power
 {
-  background-color: rgba(15,27,53,0.9);
+  background-color: rgba(15,27,53,0.8);
   margin-top: 6px; /* 与屏幕顶部留出距离 */
-  margin-right: 6px;
-	margin-right: 0px;
+  margin-right: 12px;
 	margin-left: 0px;
   /*margin-bottom: 4px;*/
   padding: 4px 2px; /* 保持内部间距 */
   border-radius: 0px 10px 10px 0px;
-  border-width: 0px;
+  border-width: 2px;
 }
 
 
 #clock{
-  background-color: rgba(15,27,53,0.9);
+  background-color: rgba(15,27,53,0.8);
   margin-top: 6px; /* 与屏幕顶部留出距离 */
   margin-left: 6px;
   margin-right: 6px;
   margin-bottom: 0px;
   padding: 4px 2px; /* 保持内部间距 */
   border-radius: 10px 10px 10px 10px;
+  border-width: 2px;
+border-color: rgba(0,0,0,1)
+}
+
+#language{
+  background-color: rgba(15,27,53,0.8);
+  margin-top: 6px;   
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 4px 2px;   
+  border-radius: 0px 10px 10px 0px;
   border-width: 0px;
 }
 
@@ -105,8 +117,9 @@
 #custom-power:hover,
 /*#workspaces:hover,*/
 #custom-notification:hover,
+#language:hover,
 #window:hover {
-  background-color: rgba(70, 75, 90, 0.9);
+  background-color: rgba(70, 75, 90, 0.8);
 }
 
 
