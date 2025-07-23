@@ -1,0 +1,116 @@
+/* 全局设置 */
+* {
+  font-family: "Jetbrains Mono Nerd Font";
+  font-weight: bold;
+  font-size: 15px;
+  color: #dcdfe1;
+}
+
+/* 透明 Waybar 背景 */
+#waybar {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  box-shadow: none;
+}
+
+/* 所有模块统一风格 */
+#workspaces,
+#window,
+#tray{
+  /*background-color: rgba(29,31,46, 0.95);*/
+  background-color: rgba(15,27,53,0.9);
+  padding: 4px 6px; /* 保持内部间距 */
+  margin-top: 6px; /* 外部间距增加 */
+  margin-left: 6px; /* 外部间距增加 */
+  margin-right: 6px; /* 外部间距增加 */
+  margin-bottom: 0px;
+  border-radius: 10px;
+  border-width: 0px;
+}
+
+#custom-reboot{
+  background-color: rgba(15,27,53,0.9);
+  margin-top: 6px; /* 与屏幕顶部留出距离 */
+	margin-right: 0px;
+	margin-left: 0px;
+  /*margin-bottom: 4px;*/
+  padding: 4px 2px; /* 保持内部间距 */
+  border-radius: 10px 0px 0px 10px;
+  border-width: 0px;
+}
+
+#custom-notification{
+  background-color: rgba(15,27,53,0.9);
+  margin-top: 6px; /* 与屏幕顶部留出距离 */
+  margin-right: 6px;
+  margin-left: 15px;
+  /*margin-bottom: 4px;*/
+  padding: 4px 2px; /* 保持内部间距 */
+  border-radius: 10px 10px 10px 10px;
+  border-width: 0px;
+}
+
+#custom-notification{
+  background-color: rgba(15,27,53,0.9);
+  margin-top: 6px; /* 与屏幕顶部留出距离 */
+  margin-right: 6px;
+	margin-right: 0px;
+	margin-left: 15px;
+  /*margin-bottom: 4px;*/
+  padding: 4px 2px; /* 保持内部间距 */
+  border-radius: 10px 10px 10px 10px;
+  border-width: 0px;
+}
+
+
+#custom-power
+{
+  background-color: rgba(15,27,53,0.9);
+  margin-top: 6px; /* 与屏幕顶部留出距离 */
+  margin-right: 6px;
+	margin-right: 0px;
+	margin-left: 0px;
+  /*margin-bottom: 4px;*/
+  padding: 4px 2px; /* 保持内部间距 */
+  border-radius: 0px 10px 10px 0px;
+  border-width: 0px;
+}
+
+
+#clock{
+  background-color: rgba(15,27,53,0.9);
+  margin-top: 6px; /* 与屏幕顶部留出距离 */
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 0px;
+  padding: 4px 2px; /* 保持内部间距 */
+  border-radius: 10px 10px 10px 10px;
+  border-width: 0px;
+}
+
+
+/* 鼠标悬停变亮一点 */
+#bluetooth:hover,
+#network:hover,
+/*#tray:hover,*/
+#backlight:hover,
+#battery:hover,
+#pulseaudio:hover,
+#custom-temperature:hover,
+#memory:hover,
+#cpu:hover,
+#clock:hover,
+#custom-lock:hover,
+#custom-reboot:hover,
+#custom-power:hover,
+/*#workspaces:hover,*/
+#custom-notification:hover,
+#window:hover {
+  background-color: rgba(70, 75, 90, 0.9);
+}
+
+
+#window {
+  font-weight: 500;
+  font-style: italic;
+}

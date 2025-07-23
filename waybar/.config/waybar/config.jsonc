@@ -1,0 +1,80 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 35,
+  "spacing": 0,
+  /*"modules-left": [
+    "hyprland/workspaces",
+    "tray",
+    "custom/lock",
+    "custom/reboot",
+    "custom/power"
+  ],*/
+  "modules-center": [
+	"custom/notification",
+	"clock",
+	"custom/reboot",
+	"custom/power"
+	],
+  /*"modules-right": [
+    "network",
+    "battery",
+    "bluetooth",
+    "pulseaudio",
+    "backlight",
+    "custom/temperature",
+    "memory",
+    "cpu",
+    "clock"
+  ],*/
+"custom/notification":{
+  /*"format": "<span color='#FFFFFF'>  </span>",
+  "on-click": "swaync-client -t",
+  "tooltip": false,*/
+
+    "tooltip": false,
+    "format": "<span color='#cdd6f4'> {icon} </span>",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": " ",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": " "
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+"custom/lock": {
+  "format": "<span color='#00FFFF'>  </span>",
+  "on-click": "hyprlock",
+  "tooltip": false,
+  },
+  "custom/reboot": {
+    "format": "<span color='#FFD700'>  </span>",
+    "on-click": "systemctl reboot",
+    "tooltip": false,
+  },
+  "custom/power": {
+    "format": "<span color='#FF4040'>  </span>",
+    "on-click": "systemctl poweroff",
+    "tooltip": false,
+  },
+  "clock": {
+    "interval": 1,
+    "timezone": "Europe/Prague",
+    "format": "<span color='#BF00FF'>  </span>{:%H:%M} ",
+    "tooltip": true,
+    "tooltip-format": "{:%d.%m.%Y, %A}"
+  },
+  "tray": {
+    "icon-size": 10,
+    "spacing": 2
+  },
+}
