@@ -61,12 +61,12 @@
   },
   "custom/reboot": {
     "format": "<span color='#f9e2af'>  </span>",
-    "on-click": "systemctl reboot",
+    "on-click": "pkill -TERM brave; sleep 1; systemctl reboot",
     "tooltip": false,
   },
   "custom/power": {
     "format": "<span color='#f38ba8'>  </span>",
-    "on-click": "systemctl poweroff",
+    "on-click": "pkill -TERM brave; sleep 1; systemctl poweroff",
     "tooltip": false,
   },
   "clock": {
